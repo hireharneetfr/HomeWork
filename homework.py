@@ -44,8 +44,12 @@ count_a = letters.count('a')
 print("times a gets repeated:", count_a)
 print()
 #9.Use list comprehension to create a new list containing the squares of all even numbers from 0 to 10. Print the resulting list.
-
+evens = [x**2 for x in range(11) if x % 2 == 0]
+print(evens)
 print()
 #10.Given the list nums = [1, 2, 2, 3, 4, 4, 5, 6, 6, 7], write a program to remove duplicates and print the unique elements only.
 nums = [1, 2, 2, 3, 4, 4, 5, 6, 6, 7]
+unique_nums = list(set(nums))
+print(unique_nums)
+print()
  
